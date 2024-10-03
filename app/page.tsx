@@ -4,7 +4,6 @@ import Link from "next/link";
 import styles from "@/app/ui/home.module.scss";
 import { noNswNovice } from "./ui/fonts";
 import Image from "next/image";
-console.log("🚀 ~ noNswN̥ovice:", noNswNovice);
 
 export default function Page() {
   return (
