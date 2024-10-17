@@ -8,6 +8,13 @@ import {
   RevenueChartSkeleton,
 } from "@/app/ui/skeletons";
 import { Suspense } from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Overview",
+  description: "A visial overview of the app data",
+  metadataBase: new URL("https://next-learn-dashboard.vercel.sh"),
+};
 
 export default async function Page() {
   return (

@@ -3,6 +3,12 @@ import Breadcrumbs from "@/app/ui/invoices/breadcrumbs";
 import Form from "@/app/ui/invoices/edit-form";
 import { notFound } from "next/navigation";
 
+export async function generateMetadata({ params }: { params: { id: string } }) {
+  return {
+    title: `Edit Invoice: ${params.id}`,
+  };
+}
+
 export default async function Page({ params }: { params: { id: string } }) {
   const id = params.id;
   const [invoice, customers] = await Promise.all([
