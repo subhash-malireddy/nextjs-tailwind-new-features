@@ -1,10 +1,10 @@
-import Image from 'next/image';
-import { lusitana } from '@/app/ui/fonts';
-import Search from '@/app/ui/search';
+import Image from "next/image";
+import { lusitana } from "@/app/ui/fonts";
+import Search from "@/app/ui/search";
 import {
   CustomersTableType,
   FormattedCustomersTable,
-} from '@/app/lib/definitions';
+} from "@/app/lib/definitions";
 
 export default async function CustomersTable({
   customers,
@@ -20,7 +20,7 @@ export default async function CustomersTable({
       <div className="mt-6 flow-root">
         <div className="overflow-x-auto">
           <div className="inline-block min-w-full align-middle">
-            <div className="overflow-hidden rounded-md bg-gray-50 p-2 md:pt-0">
+            <div className="overflow-hidden rounded-md bg-skin-fill-secondary p-2 md:pt-0">
               <div className="md:hidden">
                 {customers?.map((customer) => (
                   <div
@@ -41,7 +41,7 @@ export default async function CustomersTable({
                             <p>{customer.name}</p>
                           </div>
                         </div>
-                        <p className="text-sm text-gray-500">
+                        <p className="text-sm text-skin-muted">
                           {customer.email}
                         </p>
                       </div>
@@ -63,7 +63,7 @@ export default async function CustomersTable({
                 ))}
               </div>
               <table className="hidden min-w-full rounded-md text-gray-900 md:table">
-                <thead className="rounded-md bg-gray-50 text-left text-sm font-normal">
+                <thead className="rounded-md bg-skin-fill-secondary text-left text-sm font-normal">
                   <tr>
                     <th scope="col" className="px-4 py-5 font-medium sm:pl-6">
                       Name

@@ -3,6 +3,17 @@
 @tailwind utilities;
 
 @layer base {
+
+  :root{
+    --logo-color: #ffffff;
+    --text-color-base: #000000;
+    --text-color-muted: #6b7280;
+    --color-fill-primary: #ffffff;
+    --color-fill-secondary: #f9fafb;
+    --color-fill-accent: #2F6FEB;
+    --color-fill-secondary-active: #e0f2fe;
+  }
+
   input[type='number'] {
     -moz-appearance: textfield;
     appearance: textfield;
@@ -17,4 +28,10 @@
     @apply appearance-none;
     @apply m-0;
   }
+
+  html{
+    @apply text-skin-base;
+    @apply bg-skin-fill-primary;
+  }
 }
+

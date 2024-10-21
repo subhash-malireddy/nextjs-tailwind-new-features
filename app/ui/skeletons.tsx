@@ -1,6 +1,6 @@
 // Loading animation
 const shimmer =
-  'before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/60 before:to-transparent';
+  "before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/60 before:to-transparent";
 
 export function CardSkeleton() {
   return (
@@ -167,7 +167,7 @@ export function InvoicesTableSkeleton() {
   return (
     <div className="mt-6 flow-root">
       <div className="inline-block min-w-full align-middle">
-        <div className="rounded-lg bg-gray-50 p-2 md:pt-0">
+        <div className="rounded-lg bg-skin-fill-secondary p-2 md:pt-0">
           <div className="md:hidden">
             <InvoicesMobileSkeleton />
             <InvoicesMobileSkeleton />
