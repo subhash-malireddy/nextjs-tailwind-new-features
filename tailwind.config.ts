@@ -35,6 +35,11 @@ const config: Config = {
             },
             teritiary: "var(--color-fill-teritiary)",
             accent: "var(--color-fill-accent)",
+            chart: {
+              bar: {
+                default: "var(--color-fill-chart-bar)",
+              },
+            },
           },
         },
       },
