@@ -40,6 +40,9 @@ const config: Config = {
                 default: "var(--color-fill-chart-bar)",
               },
             },
+            skeleton: {
+              item: "var(--color-fill-skeleton-item)",
+            },
           },
         },
       },

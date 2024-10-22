@@ -14,8 +14,10 @@
     --color-fill-secondary-active: #e0f2fe;
     --color-fill-accent: #2F6FEB;
     --color-fill-chart-bar: #93c5fd;
+    --color-fill-skeleton-item: #e5e7eb;
+    --color-skeleton-gradient-start: 255, 255, 255;
   }
-
+  
   .theme-teal{
     --text-color-base: #e5e7eb;
     --text-color-active: #1f2424;
@@ -26,8 +28,10 @@
     --color-fill-accent: #009688;
     --color-fill-secondary-active: #d2f2f2;
     --color-fill-chart-bar: #28ada1;
+    --color-fill-skeleton-item: #547b7b;
+    --color-skeleton-gradient-start: 0, 0, 0;
   }
-
+  
   input[type='number'] {
     -moz-appearance: textfield;
     appearance: textfield;
