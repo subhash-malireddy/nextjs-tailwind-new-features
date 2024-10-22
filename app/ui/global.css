@@ -5,13 +5,25 @@
 @layer base {
 
   :root{
-    --logo-color: #ffffff;
     --text-color-base: #000000;
+    --text-color-active: #0056e1;
     --text-color-muted: #6b7280;
     --color-fill-primary: #ffffff;
     --color-fill-secondary: #f9fafb;
-    --color-fill-accent: #2F6FEB;
+    --color-fill-teritiary: #ffffff;
     --color-fill-secondary-active: #e0f2fe;
+    --color-fill-accent: #2F6FEB;
+  }
+
+  .theme-teal{
+    --text-color-base: #e5e7eb;
+    --text-color-active: #1f2424;
+    --text-color-muted: #d1d5db;
+    --color-fill-primary: #000000;
+    --color-fill-secondary: #1f2a2d;
+    --color-fill-teritiary: #1f1f1f;
+    --color-fill-accent: #009688;
+    --color-fill-secondary-active: #d2f2f2;
   }
 
   input[type='number'] {
@@ -29,7 +41,7 @@
     @apply m-0;
   }
 
-  html{
+  body{
     @apply text-skin-base;
     @apply bg-skin-fill-primary;
   }

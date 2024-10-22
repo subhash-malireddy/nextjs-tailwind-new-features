@@ -22,6 +22,7 @@ const config: Config = {
         skin: {
           base: "var(--text-color-base)",
           muted: "var(--text-color-muted)",
+          active: "var(--text-color-active)",
         },
       },
       backgroundColor: {
@@ -32,6 +33,7 @@ const config: Config = {
               default: "var(--color-fill-secondary)",
               active: "var(--color-fill-secondary-active)",
             },
+            teritiary: "var(--color-fill-teritiary)",
             accent: "var(--color-fill-accent)",
           },
         },

@@ -11,10 +11,10 @@ export default async function LatestInvoices() {
       <h2 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
         Latest Invoices
       </h2>
-      <div className="flex grow flex-col justify-between rounded-xl bg-skin-fill-secondary p-4">
+      <div className="flex grow flex-col justify-between rounded-xl bg-skin-fill-secondary-default p-4">
         {/* NOTE: Uncomment this code in Chapter 7 */}
 
-        <div className="bg-white px-6">
+        <div className="bg-skin-fill-teritiary px-6">
           {latestInvoices.map((invoice, i) => {
             return (
               <div
