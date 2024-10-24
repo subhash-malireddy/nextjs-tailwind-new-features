@@ -11,7 +11,7 @@ export function CardSkeleton() {
         <div className="h-5 w-5 rounded-md bg-skin-fill-skeleton-item " />
         <div className="ml-2 h-6 w-16 rounded-md bg-skin-fill-skeleton-item  text-sm font-medium" />
       </div>
-      <div className="flex items-center justify-center truncate rounded-xl bg-skin-fill-teritiary px-4 py-8">
+      <div className="flex items-center justify-center truncate rounded-xl bg-skin-fill-tertiary px-4 py-8">
         <div className="h-7 w-20 rounded-md bg-skin-fill-skeleton-item " />
       </div>
     </div>
@@ -32,12 +32,12 @@ export function CardsSkeleton() {
 export function RevenueChartSkeleton() {
   return (
     <div className={`${shimmer} relative w-full overflow-hidden md:col-span-4`}>
-      <div className="mb-4 h-8 w-36 rounded-md bg-gray-100" />
-      <div className="rounded-xl bg-gray-100 p-4">
-        <div className="mt-0 grid h-[410px] grid-cols-12 items-end gap-2 rounded-md bg-skin-fill-teritiary p-4 sm:grid-cols-13 md:gap-4" />
+      <div className="mb-4 h-8 w-36 rounded-md bg-skin-fill-secondary-default" />
+      <div className="rounded-xl bg-skin-fill-secondary-default p-4">
+        <div className="mt-0 grid h-[410px] grid-cols-12 items-end gap-2 rounded-md bg-skin-fill-tertiary p-4 sm:grid-cols-13 md:gap-4" />
         <div className="flex items-center pb-2 pt-6">
-          <div className="h-5 w-5 rounded-full bg-gray-200" />
-          <div className="ml-2 h-4 w-20 rounded-md bg-gray-200" />
+          <div className="h-5 w-5 rounded-full bg-skin-fill-skeleton-item" />
+          <div className="ml-2 h-4 w-20 rounded-md bg-skin-fill-skeleton-item" />
         </div>
       </div>
     </div>
@@ -46,15 +46,15 @@ export function RevenueChartSkeleton() {
 
 export function InvoiceSkeleton() {
   return (
-    <div className="flex flex-row items-center justify-between border-b border-gray-100 py-4">
+    <div className="flex flex-row items-center justify-between border-b py-4 last:border-b-0">
       <div className="flex items-center">
-        <div className="mr-2 h-8 w-8 rounded-full bg-gray-200" />
+        <div className="mr-2 h-8 w-8 rounded-full bg-skin-fill-skeleton-item" />
         <div className="min-w-0">
-          <div className="h-5 w-40 rounded-md bg-gray-200" />
-          <div className="mt-2 h-4 w-12 rounded-md bg-gray-200" />
+          <div className="h-5 w-40 rounded-md bg-skin-fill-skeleton-item" />
+          <div className="mt-2 h-4 w-12 rounded-md bg-skin-fill-skeleton-item" />
         </div>
       </div>
-      <div className="mt-2 h-4 w-12 rounded-md bg-gray-200" />
+      <div className="mt-2 h-4 w-12 rounded-md bg-skin-fill-skeleton-item" />
     </div>
   );
 }
@@ -64,9 +64,9 @@ export function LatestInvoicesSkeleton() {
     <div
       className={`${shimmer} relative flex w-full flex-col overflow-hidden md:col-span-4`}
     >
-      <div className="mb-4 h-8 w-36 rounded-md bg-gray-100" />
-      <div className="flex grow flex-col justify-between rounded-xl bg-gray-100 p-4">
-        <div className="bg-skin-fill-teritiary px-6">
+      <div className="mb-4 h-8 w-36 rounded-md bg-skin-fill-secondary-default" />
+      <div className="flex grow flex-col justify-between rounded-xl bg-skin-fill-secondary-default p-4">
+        <div className="px-6 rounded-md bg-skin-fill-teritiary">
           <InvoiceSkeleton />
           <InvoiceSkeleton />
           <InvoiceSkeleton />
@@ -74,8 +74,8 @@ export function LatestInvoicesSkeleton() {
           <InvoiceSkeleton />
         </div>
         <div className="flex items-center pb-2 pt-6">
-          <div className="h-5 w-5 rounded-full bg-gray-200" />
-          <div className="ml-2 h-4 w-20 rounded-md bg-gray-200" />
+          <div className="h-5 w-5 rounded-full bg-skin-fill-skeleton-item" />
+          <div className="ml-2 h-4 w-20 rounded-md bg-skin-fill-skeleton-item" />
         </div>
       </div>
     </div>
@@ -141,7 +141,7 @@ export function TableRowSkeleton() {
 
 export function InvoicesMobileSkeleton() {
   return (
-    <div className="mb-2 w-full rounded-md bg-skin-fill-teritiary p-4">
+    <div className="mb-2 w-full rounded-md bg-skin-fill-tertiary p-4">
       <div className="flex items-center justify-between border-b border-gray-100 pb-8">
         <div className="flex items-center">
           <div className="mr-2 h-8 w-8 rounded-full bg-gray-100"></div>
