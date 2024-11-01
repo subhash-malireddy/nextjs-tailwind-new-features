@@ -3,8 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-
-  :root{
+  :root {
     --text-color-base: #000000;
     --text-color-active: #0056e1;
     --text-color-muted: #6b7280;
@@ -12,13 +11,13 @@
     --color-fill-secondary: #f9fafb;
     --color-fill-teritiary: #ffffff;
     --color-fill-secondary-active: #e0f2fe;
-    --color-fill-accent: #2F6FEB;
+    --color-fill-accent: #2f6feb;
     --color-fill-chart-bar: #93c5fd;
     --color-fill-skeleton-item: #e5e7eb;
     --color-skeleton-gradient-start: 255, 255, 255;
   }
-  
-  .theme-teal{
+
+  .theme-teal {
     --text-color-base: #e5e7eb;
     --text-color-active: #1f2424;
     --text-color-muted: #d1d5db;
@@ -31,25 +30,34 @@
     --color-fill-skeleton-item: #547b7b;
     --color-skeleton-gradient-start: 0, 0, 0;
   }
-  
-  input[type='number'] {
+
+  input[type="number"] {
     -moz-appearance: textfield;
     appearance: textfield;
   }
-  
-  input[type='number']::-webkit-inner-spin-button {
-    @apply appearance-none;
-    @apply m-0;
-  }
-  
-  input[type='number']::-webkit-outer-spin-button {
+
+  input[type="number"]::-webkit-inner-spin-button {
     @apply appearance-none;
     @apply m-0;
   }
 
-  body{
+  input[type="number"]::-webkit-outer-spin-button {
+    @apply appearance-none;
+    @apply m-0;
+  }
+
+  body {
     @apply text-skin-base;
     @apply bg-skin-fill-primary;
   }
 }
 
+@layer components {
+  .link-accent {
+    @apply bg-skin-fill-accent text-skin-base;
+    @apply hover:bg-skin-fill-secondary-active hover:text-skin-active;
+    @apply active:bg-skin-fill-accent active:text-skin-base;
+  }
+
+  /* TODO:: link-secondary */
+}
