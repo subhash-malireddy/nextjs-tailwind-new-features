@@ -20,9 +20,15 @@ const config: Config = {
       },
       textColor: {
         skin: {
-          base: "var(--text-color-base)",
-          muted: "var(--text-color-muted)",
-          active: "var(--text-color-active)",
+          base: "var(--color-text-base)",
+          muted: "var(--color-text-muted)",
+          active: "var(--color-text-active)",
+          accent: {
+            link: {
+              base: "var(--color-accent-link-text-base)",
+              hover: "var(--color-accent-link-text-hover)",
+            },
+          },
         },
       },
       backgroundColor: {
@@ -34,7 +40,10 @@ const config: Config = {
               active: "var(--color-fill-secondary-active)",
             },
             tertiary: "var(--color-fill-teritiary)",
-            accent: "var(--color-fill-accent)",
+            accent: {
+              base: "var(--color-fill-accent)",
+              hover: "var(--color-fill-accent-hover)",
+            },
             chart: {
               bar: {
                 default: "var(--color-fill-chart-bar)",

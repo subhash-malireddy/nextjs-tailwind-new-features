@@ -4,27 +4,33 @@
 
 @layer base {
   :root {
-    --text-color-base: #000000;
-    --text-color-active: #0056e1;
-    --text-color-muted: #6b7280;
+    --color-text-base: #000000;
+    --color-text-active: #0056e1;
+    --color-text-muted: #6b7280;
+    --color-accent-link-text-base: #ffffff;
+    --color-accent-link-text-active: #000000;
     --color-fill-primary: #ffffff;
     --color-fill-secondary: #f9fafb;
     --color-fill-teritiary: #ffffff;
     --color-fill-secondary-active: #e0f2fe;
     --color-fill-accent: #2f6feb;
+    --color-fill-accent-hover: #205bcd;
     --color-fill-chart-bar: #93c5fd;
     --color-fill-skeleton-item: #e5e7eb;
     --color-skeleton-gradient-start: 255, 255, 255;
   }
 
   .theme-teal {
-    --text-color-base: #e5e7eb;
-    --text-color-active: #1f2424;
-    --text-color-muted: #d1d5db;
+    --color-text-base: #e5e7eb;
+    --color-text-active: #1f2424;
+    --color-text-muted: #d1d5db;
+    --color-accent-link-text-base: #ffffff;
+    --color-accent-link-text-hover: #000000;
     --color-fill-primary: #000000;
     --color-fill-secondary: #1f2a2d;
     --color-fill-teritiary: #1f1f1f;
     --color-fill-accent: #009688;
+    --color-fill-accent-hover: #007f73;
     --color-fill-secondary-active: #d2f2f2;
     --color-fill-chart-bar: #28ada1;
     --color-fill-skeleton-item: #547b7b;
@@ -54,9 +60,9 @@
 
 @layer components {
   .link-accent {
-    @apply bg-skin-fill-accent text-skin-base;
-    @apply hover:bg-skin-fill-secondary-active hover:text-skin-active;
-    @apply active:bg-skin-fill-accent active:text-skin-base;
+    @apply text-skin-accent-link-base bg-skin-fill-accent-base;
+    @apply hover:bg-skin-fill-accent-hover;
+    @apply active:bg-skin-fill-accent-base active:text-skin-base;
   }
 
   /* TODO:: link-secondary */
