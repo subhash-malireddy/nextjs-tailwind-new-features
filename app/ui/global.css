@@ -37,6 +37,25 @@
     --color-skeleton-gradient-start: 0, 0, 0;
   }
 
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-text-base: #e5e7eb;
+      --color-text-active: #1f2424;
+      --color-text-muted: #d1d5db;
+      --color-accent-link-text-base: #ffffff;
+      --color-accent-link-text-hover: #000000;
+      --color-fill-primary: #000000;
+      --color-fill-secondary: #1f2a2d;
+      --color-fill-teritiary: #1f1f1f;
+      --color-fill-accent: #009688;
+      --color-fill-accent-hover: #007f73;
+      --color-fill-secondary-active: #d2f2f2;
+      --color-fill-chart-bar: #28ada1;
+      --color-fill-skeleton-item: #547b7b;
+      --color-skeleton-gradient-start: 0, 0, 0;
+    }
+  }
+
   input[type="number"] {
     -moz-appearance: textfield;
     appearance: textfield;
@@ -60,7 +79,7 @@
 
 @layer components {
   .link-accent {
-    @apply text-skin-accent-link-base bg-skin-fill-accent-base;
+    @apply bg-skin-fill-accent-base text-skin-accent-link-base;
     @apply hover:bg-skin-fill-accent-hover;
     @apply active:bg-skin-fill-accent-base active:text-skin-base;
   }
