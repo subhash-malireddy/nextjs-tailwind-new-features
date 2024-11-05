@@ -20,7 +20,7 @@
     --color-skeleton-gradient-start: 255, 255, 255;
   }
 
-  .theme-teal {
+  .theme-dark {
     --color-text-base: #e5e7eb;
     --color-text-active: #1f2424;
     --color-text-muted: #d1d5db;
