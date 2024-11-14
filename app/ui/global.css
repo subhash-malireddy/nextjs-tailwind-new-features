@@ -20,23 +20,6 @@
     --color-skeleton-gradient-start: 255, 255, 255;
   }
 
-  .theme-dark {
-    --color-text-base: #e5e7eb;
-    --color-text-active: #1f2424;
-    --color-text-muted: #d1d5db;
-    --color-accent-link-text-base: #ffffff;
-    --color-accent-link-text-hover: #000000;
-    --color-fill-primary: #000000;
-    --color-fill-secondary: #1f2a2d;
-    --color-fill-teritiary: #1f1f1f;
-    --color-fill-accent: #009688;
-    --color-fill-accent-hover: #007f73;
-    --color-fill-secondary-active: #d2f2f2;
-    --color-fill-chart-bar: #28ada1;
-    --color-fill-skeleton-item: #547b7b;
-    --color-skeleton-gradient-start: 0, 0, 0;
-  }
-
   @media (prefers-color-scheme: dark) {
     :root {
       --color-text-base: #e5e7eb;
@@ -54,6 +37,40 @@
       --color-fill-skeleton-item: #547b7b;
       --color-skeleton-gradient-start: 0, 0, 0;
     }
+  }
+
+  .theme-dark {
+    --color-text-base: #e5e7eb;
+    --color-text-active: #1f2424;
+    --color-text-muted: #d1d5db;
+    --color-accent-link-text-base: #ffffff;
+    --color-accent-link-text-hover: #000000;
+    --color-fill-primary: #000000;
+    --color-fill-secondary: #1f2a2d;
+    --color-fill-teritiary: #1f1f1f;
+    --color-fill-accent: #009688;
+    --color-fill-accent-hover: #007f73;
+    --color-fill-secondary-active: #d2f2f2;
+    --color-fill-chart-bar: #28ada1;
+    --color-fill-skeleton-item: #547b7b;
+    --color-skeleton-gradient-start: 0, 0, 0;
+  }
+
+  .theme-light {
+    --color-text-base: #000000;
+    --color-text-active: #0056e1;
+    --color-text-muted: #6b7280;
+    --color-accent-link-text-base: #ffffff;
+    --color-accent-link-text-active: #000000;
+    --color-fill-primary: #ffffff;
+    --color-fill-secondary: #f9fafb;
+    --color-fill-teritiary: #ffffff;
+    --color-fill-secondary-active: #e0f2fe;
+    --color-fill-accent: #2f6feb;
+    --color-fill-accent-hover: #205bcd;
+    --color-fill-chart-bar: #93c5fd;
+    --color-fill-skeleton-item: #e5e7eb;
+    --color-skeleton-gradient-start: 255, 255, 255;
   }
 
   input[type="number"] {
