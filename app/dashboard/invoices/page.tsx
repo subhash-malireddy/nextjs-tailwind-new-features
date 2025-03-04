@@ -13,16 +13,13 @@ export const metadata: Metadata = {
   description: "All about invoices",
 };
 
-export default async function Page({
-  searchParams,
-}: {
-  searchParams?: {
-    query?: string;
-    page?: string;
-  };
-}) {
+type SearchParams = Promise<{ [key: string]: string | string[] | undefined }>;
+
+export default async function Page(props: { searchParams: SearchParams }) {
+  const searchParams = await props.searchParams;
   const query = searchParams?.query || "";
   const currentPage = Number(searchParams?.page) || 1;
+  if (Array.isArray(query)) throw new Error("Invalid query");
   const totalPages = await fetchInvoicesPages(query);
 
   return (
